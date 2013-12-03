@@ -31,7 +31,7 @@ class MenuState extends FlxState
         buttons = new Array<Array<Dynamic>>();
 
         var startButton = new FlxButton(FlxG.width / 2, FlxG.height * 0.4, En.start, loadGame);
-        startButton.makeGraphic(Math.ceil(startButton.width / 2), Math.ceil(startButton.height), 0x00000000);
+        startButton.makeGraphic(Math.ceil(startButton.width), Math.ceil(startButton.height), 0x00000000);
         startButton.label.color = FlxColor.WHITE;
         startButton.x -= startButton.width / 2;		
 
@@ -40,7 +40,7 @@ class MenuState extends FlxState
 	    for(button in buttons) { add(button[0]); }
 
 	    buttonArrow = new FlxSprite();
-	    buttonArrow.loadGraphic(Asset.arrow, false, false, 8, 8);
+	    buttonArrow.loadGraphic(Graphic.arrow, false, false, 8, 8);
         buttonArrow.x = currentButton.x - 8;
         buttonArrow.y = currentButton.y + buttonPadding;
         add(buttonArrow);

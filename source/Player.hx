@@ -7,17 +7,16 @@ import flixel.util.FlxColor;
 
 class Player extends FlxSprite {
 	
-	var speed = 25;
+	var speed = 20;
 	var direction = Dir.N;
 
 	public function new()
 	{
 		super();
 		this.makeGraphic(16,16, FlxColor.CHARTREUSE);
-        maxVelocity.x = 200;
-        maxVelocity.y = 200;
-        drag.x = maxVelocity.x*3;
-        drag.y = maxVelocity.y*3;
+        maxVelocity.x = maxVelocity.y = 150;
+        drag.x = maxVelocity.x*5;
+        drag.y = maxVelocity.y*5;
 
 	}
 
@@ -32,18 +31,15 @@ class Player extends FlxSprite {
 			this.velocity.x -= speed;
 			direction = Dir.W;
 			facing = FlxObject.LEFT;
-		}
-		if(FlxG.keyboard.pressed("RIGHT", "D")) {
+		} else if(FlxG.keyboard.pressed("RIGHT", "D")) {
 			this.velocity.x += speed;
 			direction = Dir.E;
 			facing = FlxObject.RIGHT;
-		}
-		if(FlxG.keyboard.pressed("UP", "W")) {
+		} else if(FlxG.keyboard.pressed("UP", "W")) {
 			this.velocity.y -= speed;
 			direction = Dir.N;
 			facing = FlxObject.UP;
-		}
-		if(FlxG.keyboard.pressed("DOWN", "S")) {
+		} else if(FlxG.keyboard.pressed("DOWN", "S")) {
 			this.velocity.y += speed;
 			direction = Dir.S;
 			facing = FlxObject.DOWN;

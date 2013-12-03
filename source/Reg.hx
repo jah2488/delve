@@ -42,7 +42,9 @@ class Reg
 	 */
 	static public var save:FlxSave;
 
+	static public var player;
 	public static function init():Void {
 		projectiles = new ProjectileManager();
+		player = new Player();
 	}
 }
