@@ -3,13 +3,16 @@ package;
 import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
+import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.group.FlxGroup;
 import flixel.text.FlxText;
 import flixel.tile.FlxTilemap;
 import flixel.ui.FlxButton;
+import flixel.util.FlxColor;
 import flixel.util.FlxMath;
+import flixel.util.FlxRandom;
 import flixel.util.FlxTimer;
 import openfl.Assets;
 
@@ -25,10 +28,15 @@ class PlayState extends FlxState
 	var healthTxt:FlxText;
 	var depthTxt:FlxText;
 
-	var mapCamera:FlxCamera;
+	var completed = false;
+	var room:String;
+
+	var enemies:FlxGroup;
 
 	override public function create():Void
 	{
+
+		FlxG.camera.flash(0x000000, 0.5, function() {  });
 		super.create();
 
 		Reg.init();
@@ -36,26 +44,45 @@ class PlayState extends FlxState
 		FlxG.mouse.hide();
 
 		level = new FlxTilemap();
+		var rooms = ["empty", "barricade", "corners", "hallway"];
+		room = rooms[Std.random(rooms.length)];
+		level.loadMap(Assets.getText('assets/data/${room}.csv'), "assets/images/delveTiles.png", 16, 16, FlxTilemap.OFF, 0, 1, 20);	
 		// level.setCustomTileMappings([0], [1], [[2,3,4]]);
-		level.loadMap(Assets.getText("assets/data/empty_room.csv"), "assets/images/delveTiles.png", 16, 16, FlxTilemap.OFF, 0, 1, 20);
+		//level.loadMap(Assets.getText("assets/data/empty.csv"), "assets/images/delveTiles.png", 16, 16, FlxTilemap.OFF, 0, 1, 20);
 		add(level);
 		add(Reg.effects);
 
 		player = Reg.player;
 		player.x = FlxG.width / 2;
-		player.y = FlxG.height / 2;
+		player.y = 160;
 
-		enemy = new Slime();
-		enemy.x = FlxG.width / 2;
-		enemy.y = 50;
+		var colors = [FlxColor.AQUAMARINE, FlxColor.RED, FlxColor.GREEN, FlxColor.GOLDENROD];
+		enemies = new FlxGroup();
+	    var enemyCount = Std.int(10/Reg.level) + 2;
+		for (i in 2...enemyCount) {
+			var e = new Slime();
 
-		add(enemy);
+			e.color = colors[Std.random(colors.length)];
 
+			var ex = 0;
+			var ey = 0;
+
+            // Check if enemy position is on a tile?
+            // Grab all tiles that are floor and assign from there
+			ex = FlxRandom.intRanged(16, FlxG.width - 16);
+			ey = FlxRandom.intRanged(16, 160);
+
+			e.x = ex;
+			e.y = ey;
+			enemies.add(e);
+		}
+
+		add(enemies);
 		add(player);
 		add(Reg.projectiles);
 
 
-		var pad   = 1;
+		var pad = 1;
 		uiLayer = new FlxGroup();
 		var blackDrop = new FlxSprite(0,0);
 		blackDrop.makeGraphic(FlxG.width, 48, 0xFF000000);
@@ -69,22 +96,13 @@ class PlayState extends FlxState
 		uiLayer.setAll("scrollFactor", new flixel.util.FlxPoint(0,0));
 		add(uiLayer);
 
-        var uiCamera = new FlxCamera(0, 0, FlxG.width, Math.ceil(43 * FlxG.camera.zoom));
-        uiCamera.color = flixel.util.FlxColor.AQUAMARINE;
-        FlxG.cameras.add(uiCamera);
-
-
-		// var camera = new FlxCamera(0, 43, FlxG.width, FlxG.height - 43);
-		// camera.setBounds(0, 43, FlxG.width, level.height);
-		// camera.color = flixel.util.FlxColor.AQUAMARINE;
-		// camera.follow(player);
-		// camera.style = FlxCamera.STYLE_SCREEN_BY_SCREEN;
-		// FlxG.cameras.add(camera);
-
-        FlxG.camera.color = flixel.util.FlxColor.RED;
-        FlxG.camera.setPosition(0, 43 * FlxG.camera.zoom);
+        // level.setPosition(0, 48);
+        level.setTileProperties(10, FlxObject.NONE, playerOnStairs, Player);
         FlxG.camera.setBounds(0, 0, level.width, level.height);
         FlxG.camera.follow(player, FlxCamera.STYLE_SCREEN_BY_SCREEN);
+        FlxG.log.add(FlxG.width);
+        FlxG.log.add(level.width);
+        FlxG.log.add(level.widthInTiles);
 	}
 
 	override public function update():Void
@@ -93,12 +111,11 @@ class PlayState extends FlxState
 		healthTxt.text = 'health ${Reg.player.health}';
 		depthTxt.text  = 'depth  ${Reg.level}';
 
-		FlxG.collide(enemy, level);
-		FlxG.overlap(enemy, Reg.projectiles, onHit);
-
+		FlxG.collide(enemies, level);
+		FlxG.overlap(enemies, Reg.projectiles, onHit);
+		FlxG.overlap(enemies, player, enemyHitPlayer);
 		FlxG.collide(player, level);
 		FlxG.overlap(player, Reg.effects, onPickup);
-		FlxG.overlap(enemy, player, enemyHitPlayer);
 
 		FlxG.collide(Reg.projectiles, Reg.projectiles, arrowOnArrow);
 		FlxG.collide(Reg.projectiles, level, arrowHitWall);
@@ -106,6 +123,15 @@ class PlayState extends FlxState
 
 		super.update();
 	}	
+
+	private function playerOnStairs(player:FlxObject, level:FlxObject):Void
+	{
+		if(!completed) {
+			completed = true;
+			Reg.level += 1;
+			FlxG.resetState();
+		}
+	}
 
 	private function enemyHitPlayer(enemyRef:FlxBasic, playerRef:FlxBasic):Void
 	{
@@ -116,6 +142,18 @@ class PlayState extends FlxState
 	{
 		var item  = cast(effectRef, Gem);
 		var sound = openfl.Assets.getSound("assets/sounds/pickup.wav");
+		var txtG = new FlxGroup(2);
+		var txt = new FlxText(player.x, player.y, 40, Std.string(100 * item.level), 7);
+		var txs = new FlxText(txt.x + 1, txt.y + 1, 40, txt.text, 7);
+		txs.color = FlxColor.BLACK;
+		FlxTimer.start(2,   function(flxtimer:FlxTimer) { txt.kill(); txs.kill(); });
+		FlxTimer.start(0.1, function(flxtimer:FlxTimer) { txt.alpha -= 0.17;
+														  txs.alpha -= 0.17; }, 100);
+		FlxTimer.start(0.1, function(flxtimer:FlxTimer) { txt.y     -= 2.10;
+														  txs.y     -= 2.10; }, 100);
+		txtG.add(txs);
+		txtG.add(txt);
+		add(txtG);
 		sound.play();
 		item.kill();
 		Reg.score += 100 * item.level;

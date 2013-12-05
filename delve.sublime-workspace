@@ -1,0 +1,1008 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"level",
+				"levelMod	var"
+			],
+			[
+				"rese",
+				"resetState()	Void"
+			],
+			[
+				"setT",
+				"setTileProperties(...)	Void"
+			],
+			[
+				"set",
+				"setPosition(...)	Void"
+			],
+			[
+				"si",
+				"setSize(...)	Unknown<0>"
+			],
+			[
+				"r",
+				"RED	Int"
+			],
+			[
+				"cam",
+				"camera	flixel.FlxCamera"
+			],
+			[
+				"c",
+				"camera	flixel.FlxCamera"
+			],
+			[
+				"he",
+				"height	Float"
+			],
+			[
+				"e",
+				"exists	Bool"
+			],
+			[
+				"player",
+				"playerRef	var"
+			],
+			[
+				"a",
+				"addQuick(...)	Void"
+			],
+			[
+				"o",
+				"origin	flixel.util.FlxPoint"
+			],
+			[
+				"Fl",
+				"FlxParticle	class"
+			],
+			[
+				"hur",
+				"hurtSound	var"
+			],
+			[
+				"F",
+				"FlxEmitter	class"
+			],
+			[
+				"fram",
+				"frameIndex	Int"
+			],
+			[
+				"l",
+				"loadSound(...)	Void"
+			],
+			[
+				"dir",
+				"direction"
+			],
+			[
+				"fra",
+				"frameIndex	Int"
+			],
+			[
+				"FlxT",
+				"FlxTimer	flixel.util"
+			],
+			[
+				"ene",
+				"enemyRef	var"
+			],
+			[
+				"pr",
+				"projectiles	ProjectileManager"
+			],
+			[
+				"Pro",
+				"ProjectileManager	class"
+			],
+			[
+				"getfirstA",
+				"getFirstAvailable(...)	flixel.FlxBasic"
+			],
+			[
+				"Style",
+				"STYLE_SCREEN_BY_SCREEN	Int"
+			],
+			[
+				"FlxTil",
+				"FlxTilemap	flixel.tile"
+			],
+			[
+				"FlxCol",
+				"FlxColor	flixel.util"
+			],
+			[
+				"Flx",
+				"FlxSprite	class"
+			],
+			[
+				"but",
+				"buttonPadding	var"
+			],
+			[
+				"butt",
+				"buttonPadding	var"
+			],
+			[
+				"gr",
+				"makeGraphic(...)	flixel.FlxSprite"
+			],
+			[
+				"DPAD",
+				"DPAD_RIGHT	Int"
+			],
+			[
+				"game",
+				"gamepad	package"
+			],
+			[
+				"sta",
+				"stageWidth	Int"
+			],
+			[
+				"st",
+				"stageHeight	Int"
+			],
+			[
+				"re",
+				"resizeGame(...)	Void"
+			],
+			[
+				"0x",
+				"0xFFEAAB98"
+			],
+			[
+				"coi",
+				"Coin	Unknown<0>"
+			],
+			[
+				"h",
+				"Hurt	Unknown<3>"
+			],
+			[
+				"pl",
+				"PlatformTiles	Unknown<2>"
+			],
+			[
+				"Tile",
+				"TILE_LOCATION	var"
+			],
+			[
+				"Pl",
+				"PlatformTiles	Unknown<1>"
+			],
+			[
+				"P",
+				"PlatformTiles	Unknown<1>"
+			],
+			[
+				"Gra",
+				"Graphics	com.jah2488.pipeDream.assets"
+			],
+			[
+				"up",
+				"Upbeat	Unknown<0>"
+			],
+			[
+				"cre",
+				"createInstance"
+			],
+			[
+				"Class",
+				"class"
+			],
+			[
+				"play",
+				"play(...)	org.flixel.FlxSound"
+			],
+			[
+				"just",
+				"justReleased( Key : String )	Bool"
+			],
+			[
+				"exit",
+				"EXIT"
+			],
+			[
+				"RE",
+				"REQUESTED_HEIGHT	var"
+			],
+			[
+				"displayStat",
+				"StageDisplayState	flash.display"
+			],
+			[
+				"new",
+				"newState	var"
+			],
+			[
+				"disp",
+				"displayState	function"
+			],
+			[
+				"stag",
+				"stageWidth	var"
+			],
+			[
+				"Z",
+				"ZERO	Bool"
+			],
+			[
+				"in",
+				"getIsDown()	Array<org.flixel.system.input.FlxMapObject>"
+			],
+			[
+				"blend",
+				"blendMode	var"
+			],
+			[
+				"rev",
+				"revertButton	var"
+			],
+			[
+				"ma",
+				"Math"
+			],
+			[
+				"DR",
+				"DRAW_INDEX	var"
+			],
+			[
+				"ST",
+				"START_INDEX	var"
+			],
+			[
+				"TILE",
+				"TILE_HEIGHT	var"
+			],
+			[
+				"rever",
+				"revertMap"
+			],
+			[
+				"save",
+				"saveButton	var"
+			],
+			[
+				"ori",
+				"originalMapData	var"
+			],
+			[
+				"j",
+				"justReleased( Key : String )	Bool"
+			],
+			[
+				"ju",
+				"justReleased"
+			],
+			[
+				"curr",
+				"currentTile	var"
+			],
+			[
+				"dr",
+				"drawDebugOnCamera(...)	Void"
+			],
+			[
+				"cur",
+				"currentLayer"
+			],
+			[
+				"watch",
+				"watch(...)	Void"
+			],
+			[
+				"d",
+				"drawDebug()	Void"
+			],
+			[
+				"curre",
+				"currentLayer	var"
+			],
+			[
+				"sprit",
+				"spriteLayer	var"
+			],
+			[
+				"pu",
+				"push(...)	Int"
+			],
+			[
+				"levels",
+				"levels"
+			],
+			[
+				"p",
+				"pressed()	Bool"
+			],
+			[
+				"lev",
+				"levelEditorOn	var"
+			],
+			[
+				"far",
+				"farFieldSlider	var"
+			],
+			[
+				"inn",
+				"innerNearFieldSlider	var"
+			],
+			[
+				"wrap",
+				"wrapWorldButton	var"
+			],
+			[
+				"vox",
+				"voxAmount	var"
+			],
+			[
+				"fl",
+				"FlxG"
+			],
+			[
+				"pla",
+				"Player	class"
+			],
+			[
+				"on",
+				"ONE	Bool"
+			],
+			[
+				"fol",
+				"follow(...)	Void"
+			],
+			[
+				"STYLE",
+				"STYLE_SCREEN_BY_SCREEN	Int"
+			],
+			[
+				"s",
+				"style	Int"
+			],
+			[
+				"H",
+				"height	Int"
+			],
+			[
+				"touched",
+				"touchedLocation	function"
+			],
+			[
+				"ret",
+				"returnState	var"
+			],
+			[
+				"return",
+				"returnState"
+			],
+			[
+				"get",
+				"getWorldPosition(...)	org.flixel.FlxPoint"
+			],
+			[
+				"Plat",
+				"PlatformState	com.jah2488.ld48.enough"
+			],
+			[
+				"FlxS",
+				"FlxState	class"
+			],
+			[
+				"sc",
+				"scrollFactor	org.flixel.FlxPoint"
+			],
+			[
+				"leve",
+				"levelInstructions	var"
+			],
+			[
+				"z",
+				"ZERO	Bool"
+			],
+			[
+				"le",
+				"levelSelect	var"
+			],
+			[
+				"mapCSV",
+				"mapCSV_Tutorial_Map3"
+			],
+			[
+				"L",
+				"LevelOneState"
+			],
+			[
+				"Le",
+				"LEVEL_START	var"
+			],
+			[
+				"w",
+				"WinState	class"
+			],
+			[
+				"R",
+				"Registry"
+			],
+			[
+				"flash",
+				"flash(...)	Void"
+			],
+			[
+				"tim",
+				"timeLeft	Float"
+			],
+			[
+				"FlxTi",
+				"FlxTimer	class"
+			],
+			[
+				"fla",
+				"flash(...)	Void"
+			],
+			[
+				"create",
+				"createInstance(...)	createInstance.T"
+			],
+			[
+				"ti",
+				"Tiles	class"
+			],
+			[
+				"Sprit",
+				"spriteLayer	var"
+			],
+			[
+				"J",
+				"justReleased( Key : String )	Bool"
+			],
+			[
+				"fli",
+				"flicker( ?Duration : Float )	Void"
+			],
+			[
+				"Platform",
+				"PlatformState	class"
+			],
+			[
+				"i",
+				"imgAuto	String"
+			],
+			[
+				"imag",
+				"imageFnArg	var"
+			],
+			[
+				"comp",
+				"componentStores"
+			],
+			[
+				"ima",
+				"imageFnArg	var"
+			],
+			[
+				"tu",
+				"thrustArg	var"
+			],
+			[
+				"dy",
+				"dyArg	var"
+			],
+			[
+				"y",
+				"yArg	var"
+			],
+			[
+				"getCl",
+				"getClassName"
+			],
+			[
+				"iter",
+				"IntIter	class"
+			],
+			[
+				"Game",
+				"GameOfLife	class"
+			],
+			[
+				"Ga",
+				"GameofLife"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/nmml.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":wq",
+				"BracketHighlighter: Swap Quotes"
+			],
+			[
+				":",
+				":w - Save"
+			],
+			[
+				":sw",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				":q",
+				"BracketHighlighter: Swap Quotes"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ha",
+				"Haxe: Manage libraries"
+			],
+			[
+				"hax",
+				"Haxe: Restart Server"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				":ew",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pack",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"packag",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"",
+				"Build: Build"
+			],
+			[
+				"haxe",
+				"HaXe: New Class"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": true,
+		"show_open_files": true,
+		"show_tabs": true,
+		"side_bar_visible": true,
+		"status_bar_visible": true
+	},
+	"file_history":
+	[
+		"/Users/jherrick/projects/games/nes_jam/delve/source/Graphic.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/ProjectileManager.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/En.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/Arrow.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/Dir.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/MenuState.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/Player.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/Gem.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/Effects.hx",
+		"/usr/lib/haxe/lib/flixel/git/flixel/FlxCamera.hx",
+		"/usr/lib/haxe/lib/flixel/git/flixel/tile/FlxTilemap.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/Color.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/Slime.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/PlayState.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/assets/data/empty.csv",
+		"/Users/jherrick/projects/games/nes_jam/delve/assets/data/hallway.csv",
+		"/Users/jherrick/projects/games/nes_jam/delve/assets/data/corners.csv",
+		"/Users/jherrick/projects/games/nes_jam/delve/assets/data/barricade.csv",
+		"/Users/jherrick/projects/games/nes_jam/delve/export/mac64/cpp/bin/delve.app/Contents/Resources/assets/data/empty.csv",
+		"/Users/jherrick/projects/games/nes_jam/delve/export/mac64/cpp/bin/delve.app/Contents/Resources/assets/data/hallway.csv",
+		"/Users/jherrick/projects/games/nes_jam/delve/export/mac64/cpp/bin/delve.app/Contents/Resources/assets/data/empty_room.csv",
+		"/Users/jherrick/projects/games/nes_jam/delve/export/mac64/neko/bin/delve.app/Contents/Resources/assets/data/empty_room.csv",
+		"/Users/jherrick/projects/games/nes_jam/delve/assets/data/empty_room.csv",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/GameClass.hx",
+		"/usr/lib/haxe/lib/flixel/git/flixel/tile/FlxTilemapBuffer.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/Reg.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/Project.xml",
+		"/Users/jherrick/projects/games/nes_jam/delve/assets/images/arrow.png",
+		"/Users/jherrick/projects/games/nes_jam/delve/assets/sounds/hurt.ogg",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/Asset.hx",
+		"/Users/jherrick/projects/games/nes_jam/delve/assets/images/dungeon.png",
+		"/Users/jherrick/projects/games/nes_jam/delve/source/Assets:hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/iPhoneState/hx.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/PipeDream.xml",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/Main.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/Level.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/MenuState.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/levels/LevelContract.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/PlatformState.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/Reg.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/pipe_dream.iml",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/PauseState.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/assets/Graphics.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/assets/Audio.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/levels/TutorialState.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/levels/LevelOneState.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/levels/LevelTwoState.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/levels/LevelThreeState.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/levels/LevelFourState.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/levels/WinState.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/locals/En.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/utils/i18n.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/i18n.hx",
+		"/Users/jherrick/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/com/jah2488/pipeDream/Player.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/source/ProjectClass.hx",
+		"/Users/jherrick/projects/games/full/pipe_dream/PipeDream.hxproj",
+		"/Users/jherrick/projects/games/prototypes/doppler/source/SSGPreloader.hx",
+		"/Users/jherrick/projects/games/prototypes/doppler/doppler.xml",
+		"/Users/jherrick/projects/games/prototypes/doppler/source/PlayState.hx",
+		"/Users/jherrick/projects/games/prototypes/doppler/source/ProjectClass.hx",
+		"/Users/jherrick/projects/games/prototypes/doppler/doppler.hxproj",
+		"/Users/jherrick/projects/games/prototypes/doppler/source/Main.hx",
+		"/Users/jherrick/projects/languages/haxe/planet_crash_explorer/source/com/jah2488/pce/Tiles.hx",
+		"/Users/jherrick/projects/languages/haxe/planet_crash_explorer/source/com/jah2488/pce/Registry.hx",
+		"/Users/jherrick/projects/languages/haxe/planet_crash_explorer/source/com/jah2488/pce/Entity.hx",
+		"/Users/jherrick/projects/languages/haxe/planet_crash_explorer/source/StartState.hx",
+		"/Users/jherrick/projects/languages/haxe/planet_crash_explorer/source/MenuState.hx",
+		"/Users/jherrick/projects/languages/haxe/planet_crash_explorer/source/PlayState.hx",
+		"/Users/jherrick/projects/languages/haxe/planet_crash_explorer/source/com/jah2488/pce/LevelOne.hx",
+		"/Users/jherrick/projects/languages/haxe/planet_crash_explorer/source/com/jah2488/pce/Swarm.hx",
+		"/Users/jherrick/projects/languages/haxe/planet_crash_explorer/source/com/jah2488/pce/Player.hx",
+		"/Users/jherrick/projects/languages/haxe/planet_crash_explorer/source/ProjectClass.hx",
+		"/Users/jherrick/projects/games/prototypes/doppler/source/MenuState.hx",
+		"/Users/jherrick/projects/games/prototypes/doppler/source/Bullet.hx",
+		"/Users/jherrick/projects/games/prototypes/doppler/source/BulletManager.hx",
+		"/Users/jherrick/projects/games/prototypes/doppler/source/VoxManager.hx",
+		"/Users/jherrick/projects/games/prototypes/doppler/source/Reg.hx",
+		"/Users/jherrick/projects/games/prototypes/doppler/source/Player.hx",
+		"/Users/jherrick/projects/games/prototypes/doppler/source/Item.hx",
+		"/Users/jherrick/projects/games/prototypes/doppler/source/FX.hx",
+		"/Users/jherrick/Downloads/NES Game Making/cc65_nes_examples/my_example.c",
+		"/Users/jherrick/projects/games/pipe_dream/export/emscripten/bin/index.html",
+		"/Users/jherrick/projects/games/pipe_dream/Pipe Dream.xml",
+		"/Users/jherrick/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/jherrick/projects/games/fishing_jam/source/PlayState.hx",
+		"/Users/jherrick/projects/games/prototype/source/Main.hx",
+		"/Users/jherrick/projects/games/prototype/Prototype.xml",
+		"/Users/jherrick/projects/games/prototype/Prototype.hxproj",
+		"/Users/jherrick/projects/games/fishing_jam/export/flash/bin/fishing_quest.swf",
+		"/usr/lib/haxe/lib/flixel/1,09/org/flixel/addons/FlxGridSprite.hx",
+		"/Users/jherrick/projects/games/fishing_jam/source/Level.hx",
+		"/Users/jherrick/projects/games/fishing_jam/fishing_quest.nmml",
+		"/Users/jherrick/projects/games/fishing_jam/source/ProjectClass.hx",
+		"/Users/jherrick/projects/ludum-dare/26/source/com/jah2488/ld48/enough/levels/LevelOneState.hx",
+		"/Users/jherrick/projects/ludum-dare/26/source/com/jah2488/ld48/enough/levels/LevelFourState.hx",
+		"/Users/jherrick/projects/ludum-dare/26/source/com/jah2488/ld48/enough/levels/LevelThreeState.hx",
+		"/Users/jherrick/projects/ludum-dare/26/source/com/jah2488/ld48/enough/levels/TutorialState.hx",
+		"/Users/jherrick/projects/ludum-dare/26/source/com/jah2488/ld48/enough/levels/LevelTwoState.hx",
+		"/Users/jherrick/projects/ludum-dare/26/source/ProjectClass.hx",
+		"/Users/jherrick/projects/ludum-dare/26/source/com/jah2488/ld48/Level.hx",
+		"/Users/jherrick/projects/ludum-dare/26/JustEnough.nmml",
+		"/Users/jherrick/projects/ludum-dare/26/source/com/jah2488/ld48/enough/Player.hx",
+		"/Users/jherrick/projects/ludum-dare/26/source/com/jah2488/ld48/enough/Registry.hx",
+		"/Users/jherrick/projects/ludum-dare/26/source/com/jah2488/ld48/enough/PlatformState.hx",
+		"/Users/jherrick/projects/ludum-dare/26/source/com/jah2488/ld48/enough/Tiles.hx",
+		"/Users/jherrick/projects/ludum-dare/26/source/MenuState.hx",
+		"/Users/jherrick/projects/ludum-dare/26/source/com/jah2488/ld48/enough/levels/WinState.hx",
+		"/Users/jherrick/projects/ludum-dare/26/source/com/jah2488/ld48/enough/LevelOneState.hx",
+		"/Users/jherrick/projects/ludum-dare/26/assets/icon.png",
+		"/Users/jherrick/projects/ludum-dare/26/JustEnough.hxproj",
+		"/Users/jherrick/projects/ludum-dare/26/source/com/jah2488/ld48/enough/RaceState.hx",
+		"/Users/jherrick/projects/HaxeFlixelDemoes/ModeDemo/source/PlayState.hx",
+		"/Users/jherrick/projects/HaxeFlixelDemoes/elsassph-jumper/source/com/chipacabra/jumper/Player.hx",
+		"/Users/jherrick/projects/languages/haxe/planet_crash_explorer/project.nmml",
+		"/Users/jherrick/projects/languages/haxe/planet_crash_explorer/source/Main.hx",
+		"/Users/jherrick/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/jherrick/projects/ludum-dare/25/source/Block.hx",
+		"/Users/jherrick/projects/haxe/spaceTyrant/source/com/jah2488/space/components/GravitySensitive.hx",
+		"/Users/jherrick/projects/haxe/spaceTyrant/source/com/jah2488/space/components/Motion.hx",
+		"/Users/jherrick/projects/haxe/spaceTyrant/source/com/jah2488/space/components/Fuel.hx",
+		"/Users/jherrick/projects/haxe/spaceTyrant/source/com/jah2488/space/systems/System.hx",
+		"/Users/jherrick/projects/haxe/spaceTyrant/source/com/jah2488/space/components/SpatialState.hx",
+		"/Users/jherrick/Library/Application Support/Sublime Text 2/Packages/User/nmml.sublime-build",
+		"/Users/jherrick/projects/haxe/katas/test/FizzBuzzTest.hx",
+		"/Users/jherrick/projects/haxe/katas/test/GameOfLifeTest.hx",
+		"/Users/jherrick/8thLight/projects/code-retreat/haxe/test/TestSuite.hx",
+		"/Users/jherrick/8thLight/projects/code-retreat/haxe/build.hxml"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"assets/data/empty.csv",
+			"assets/data/hallway.csv",
+			"assets/data/empty_room.csv",
+			"empty_room.csv",
+			"*.csv",
+			"/Users/jherrick/projects/games/pipe_dream/source",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"32",
+			"1",
+			" 1",
+			"1",
+			"21",
+			"0",
+			"1",
+			"0",
+			"1",
+			"hurt",
+			"Asset",
+			"	\n",
+			"REQUESTED_HEIGHT",
+			"REQUESTED_WIDTH",
+			"nextLevel",
+			"set",
+			"_bloom",
+			"wallRatioSlider",
+			"smoothingSlider",
+			"Registry",
+			"nme",
+			"enough",
+			"instance",
+			"Type",
+			"public",
+			"shiftt"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"01",
+			" 1",
+			"01",
+			"20",
+			"1",
+			"20",
+			"openfl"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 518.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"empty",
+				"delve/assets/data/empty_room.csv"
+			],
+			[
+				"flxtilemap",
+				"Flixel/flixel/tile/FlxTilemap.hx"
+			],
+			[
+				"flxtil",
+				"Flixel/flixel/tile/FlxTilemapBuffer.hx"
+			],
+			[
+				"emp",
+				"delve/assets/data/empty_room.csv"
+			],
+			[
+				"flxtilem",
+				"Flixel/flixel/tile/FlxTilemap.hx"
+			],
+			[
+				"game",
+				"delve/source/GameClass.hx"
+			],
+			[
+				"flxcamera",
+				"Flixel/flixel/FlxCamera.hx"
+			],
+			[
+				"reg",
+				"delve/source/Reg.hx"
+			],
+			[
+				"gra",
+				"delve/source/Graphic.hx"
+			],
+			[
+				"slim",
+				"delve/source/Slime.hx"
+			],
+			[
+				"playstat",
+				"delve/source/PlayState.hx"
+			],
+			[
+				"menu",
+				"source/MenuState.hx"
+			],
+			[
+				"platformsta",
+				"source/com/jah2488/pipeDream/PlatformState.hx"
+			],
+			[
+				"level",
+				"source/com/jah2488/pipeDream/Level.hx"
+			],
+			[
+				"pausest",
+				"source/com/PauseState.hx"
+			],
+			[
+				"au",
+				"source/com/jah2488/pipeDream/assets/Audio.hx"
+			],
+			[
+				"audio",
+				"source/com/jah2488/pipeDream/assets/Audio.hx"
+			],
+			[
+				"play",
+				"source/com/jah2488/pipeDream/Player.hx"
+			],
+			[
+				"levelfou",
+				"source/com/jah2488/pipeDream/levels/LevelFourState.hx"
+			],
+			[
+				"levelt",
+				"source/com/jah2488/pipeDream/levels/LevelThreeState.hx"
+			],
+			[
+				"leveltw",
+				"source/com/jah2488/pipeDream/levels/LevelTwoState.hx"
+			],
+			[
+				"levelo",
+				"source/com/jah2488/pipeDream/levels/LevelOneState.hx"
+			],
+			[
+				"tutorialst",
+				"source/com/jah2488/pipeDream/levels/TutorialState.hx"
+			],
+			[
+				"lev",
+				"source/com/jah2488/pipeDream/Level.hx"
+			],
+			[
+				"levelon",
+				"source/com/jah2488/pipeDream/levels/LevelOneState.hx"
+			],
+			[
+				"plat",
+				"source/com/jah2488/pipeDream/PlatformState.hx"
+			],
+			[
+				"platfor",
+				"source/com/jah2488/pipeDream/PlatformState.hx"
+			],
+			[
+				"levelthr",
+				"source/com/jah2488/pipeDream/levels/LevelThreeState.hx"
+			],
+			[
+				"proj",
+				"source/ProjectClass.hx"
+			],
+			[
+				"player",
+				"source/com/jah2488/ld48/enough/Player.hx"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true
+}

@@ -6,6 +6,7 @@ import flixel.effects.particles.FlxParticle;
 class Gem extends FlxParticle
 {
 	public var level = 1;
+	var attractionSpeed = 01;
 
 	public function new()
 	{
@@ -18,10 +19,10 @@ class Gem extends FlxParticle
 	}
 
 	override public function update():Void {
-		if(x > Reg.player.x) x -= 0.1;
-		if(x < Reg.player.x) x += 0.1;
-		if(y < Reg.player.y) y += 0.1;
-		if(y > Reg.player.y) y -= 0.1;
+		if(x > Reg.player.x) acceleration.x -= attractionSpeed;
+		if(x < Reg.player.x) acceleration.x += attractionSpeed;
+		if(y < Reg.player.y) acceleration.y += attractionSpeed;
+		if(y > Reg.player.y) acceleration.y -= attractionSpeed;
 		super.update();
 	}
 
