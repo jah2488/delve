@@ -9,6 +9,7 @@ import flixel.util.FlxSave;
 */
 class Reg
 {
+	static public var effects:Effects;
 	static public var projectiles:ProjectileManager;
 	/**
 	 * Generic levels Array that can be used for cross-state stuff.
@@ -44,7 +45,8 @@ class Reg
 
 	static public var player;
 	public static function init():Void {
-		projectiles = new ProjectileManager();
+		effects = new Effects();
+		projectiles = new ProjectileManager(15);
 		player = new Player();
 	}
 }

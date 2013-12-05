@@ -2,8 +2,18 @@
 <project>
 	<app title="delve" file="delve" main="Main" version="0.0.1" company="HaxeFlixel" />
 	
-	<window width="512" height="480" fps="60" orientation="portrait" resizable="true" if="web" />
-	<window width="512" height="480" fps="60" orientation="landscape" fullscreen="false" hardware="true" vsync="true" unless="web" />
+
+<!-- 	<window width="256" height="240" fps="60" orientation="portrait" resizable="true" if="web" />
+	<window width="256" height="240" fps="60" orientation="landscape" fullscreen="false" hardware="true" vsync="true" unless="web" /> -->
+
+
+	<window width="1024" height="960" fps="60" orientation="portrait" resizable="true" if="web" />
+	<window width="1024" height="960" fps="60" orientation="landscape" fullscreen="false" hardware="true" vsync="true" unless="web" />
+
+	
+  <!--   <window width="512" height="480" fps="60" orientation="portrait" resizable="true" if="web" />
+	<window width="512" height="480" fps="60" orientation="landscape" fullscreen="false" hardware="true" vsync="true" unless="web" /> -->
+	
 	
 	<!--The flixel preloader gets stuck in Chrome, so it's disabled by default for now. 
 	Safe to use if you embed the swf into a html file!-->
@@ -15,13 +25,7 @@
 	<set name="BUILD_DIR" value="export" />
 	<classpath name="source" />
 	
-	<!--You can use rename="newName" to shorten the paths to the individual subdirectories!-->
-<!-- 	<assets path="assets" if="desktop">
-		<sound path="sounds/hurt.ogg" id="Hurt"/>
-		<sound path="sounds/arrow.ogg"  id="arrow"/>
-		<sound path="sounds/pickup.ogg" id="coin"/>
-	</assets> -->
-	
+	<assets path="assets" />
 	<haxelib name="openfl" />
 	<haxelib name="flixel"/>
 	
