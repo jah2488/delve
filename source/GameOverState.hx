@@ -8,51 +8,42 @@ import flixel.ui.FlxButton;
 import flixel.util.FlxColor;
 import flixel.util.FlxMath;
 
+import flash.Lib;
+import flash.net.URLRequest;
+import haxe.Http;
 
-class MenuState extends FlxState
-{
+class GameOverState extends FlxState {
     var buttons:Array<Array<Dynamic>>;
-    var buttonArrow:FlxSprite;
     var currentButton:FlxButton;
     var buttonSelector:Int = 0;	
     var buttonPadding = 5;
 
 	override public function create():Void
 	{
-		// Set a background color
-		FlxG.cameras.bgColor = 0xff131c1b;
-		// Show the mouse (in case it hasn't been disabled)
-		FlxG.mouse.hide();
+		FlxG.cameras.bgColor = 0xff444444;
+		FlxG.mouse.show();
 
-		var bg = new FlxSprite(0,0,"assets/images/title.png");
-		add(bg);
-	    var title    = new FlxText(0, FlxG.height - 10,  FlxG.width, "An #NESJam entry by Justin Herrick", 8);
-	    var titleshd = new FlxText(1, title.y + 1,       FlxG.width, "An #NESJam entry by Justin Herrick", 8);
-	    titleshd.color = 0x00000000;
-	    title.alignment = titleshd.alignment = "center";
-	    add(titleshd);
+	    var title = new FlxText(0, FlxG.height * 0.1, FlxG.width, "GAME OVER", 30);
+	    title.alignment = "center";
 	    add(title);
 
         buttons = new Array<Array<Dynamic>>();
 
-        var startButton = new FlxButton(FlxG.width / 2, FlxG.height * 0.4, "PRESS ENTER", loadGame);
+        var startButton = new FlxButton(FlxG.width / 2, FlxG.height * 0.4, "Play Again", loadGame);
         startButton.makeGraphic(Math.ceil(startButton.width), Math.ceil(startButton.height), 0x00000000);
         startButton.label.color = FlxColor.WHITE;
         startButton.x -= startButton.width / 2;		
-        
+
+        var shareButtontw = new FlxButton(FlxG.width / 2, startButton.y + 45, "Twitter", twShare);
+        shareButtontw.makeGraphic(Math.ceil(shareButtontw.width), Math.ceil(shareButtontw.height), 0x00000000);
+        shareButtontw.label.color = FlxColor.WHITE;
+        shareButtontw.x -= shareButtontw.width / 2;		
+
         buttons.push([startButton, loadGame]);
+        buttons.push([shareButtontw, twShare]);
         currentButton = buttons[buttonSelector][0];
 	    for(button in buttons) { add(button[0]); }
 
-	    buttonArrow = new FlxSprite();
-	    buttonArrow.loadGraphic(Graphic.arrow, false, false, 8, 8);
-        buttonArrow.x = currentButton.x - 8;
-        buttonArrow.y = currentButton.y + buttonPadding;
-        add(buttonArrow);
-
-
-        var versionText = new FlxText(10, FlxG.height - 10, 50, GameClass.VERSION, 8);
-        add(versionText);
 		super.create();
 	}
 
@@ -60,12 +51,19 @@ class MenuState extends FlxState
 	{
 		FlxG.switchState(new PlayState());
 	}
+
+	function twShare():Void {
+		var link  = "http://justinherrick.com/games/delve";
+		var tweet = 'I survived ${Std.string(Reg.level)} level\'s in Delve.\n ${link}  #NESjam #1gam #gamedev +@jah2488';
+		var url   = StringTools.urlEncode('https://twitter.com/home?status=${tweet}');
+		Lib.getURL(new URLRequest('http://twitter.com/intent/tweet?text=${StringTools.urlEncode(tweet)}'));
+	}
 	
 	override public function update():Void
 	{
+
 	    var currentMethod = buttons[buttonSelector][1];
 
-	    buttonArrow.y = currentButton.y + buttonPadding;
 
 	    if(FlxG.keyboard.justReleased("TAB", "J", "DOWN")) { 
 	      // FlxG.sound.play(Audio.Beep, 0.4);
@@ -85,5 +83,5 @@ class MenuState extends FlxState
 	override public function destroy():Void
 	{
 		super.destroy();
-	}
+	}	
 }

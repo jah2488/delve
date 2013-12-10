@@ -9,6 +9,7 @@ import flixel.util.FlxSave;
 */
 class Reg
 {
+	static public var weapon:Weapon;
 	static public var effects:Effects;
 	static public var projectiles:ProjectileManager;
 	/**
@@ -48,5 +49,10 @@ class Reg
 		effects = new Effects();
 		projectiles = new ProjectileManager(15);
 		player = new Player();
+		weapon = new Weapon();
+	}
+
+	public static function swingSword(x:Float, y:Float, angle:Int):Void {
+		weapon.place(x,y,angle);
 	}
 }

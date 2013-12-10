@@ -12,7 +12,7 @@ class Slime extends FlxSprite {
 
 	static public inline var baseTimeBetweenSteps = 2;
 	static public inline var baseSpeed = 10;
-	static public inline var baseHealth = 2;
+	static public inline var baseHealth = 1;
 
 	public var payout = 2;
 	public var level  = 1;
@@ -26,18 +26,18 @@ class Slime extends FlxSprite {
 		super();
 		loadGraphic("assets/images/slime.png", true, true, 16, 16);
 
-		health = levelMod + baseHealth;
+		health = levelMod / 2 + baseHealth;
 		moveTimer = FlxTimer.start(Math.abs(baseTimeBetweenSteps - levelMod));
 
 		animation.add("Walk", [0,1,2,1,3,2,3,3,3,0], 5, true);
-		animation.play("Walk");
+		animation.play("Walk")	;
 
 		this.color = flixel.util.FlxColor.CHARTREUSE;
 		hurtSound = openfl.Assets.getSound("assets/sounds/hurt.wav");
 
 		maxVelocity.x = maxVelocity.y = baseSpeed*5;
 		drag.x = drag.y = maxVelocity.x/2;
-		width = height = 14;
+		width = height = 12;
 		offset.x = offset.y = 2;
 	}
 

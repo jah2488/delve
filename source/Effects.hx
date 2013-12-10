@@ -5,6 +5,7 @@ import flixel.effects.particles.FlxEmitter;
 
 class Effects extends FlxGroup {
 
+	private var statusText:ScoreText;
     private var emitter:FlxEmitter;
 	static private inline var EMITTER_SIZE  = 2;
 	static private inline var EXPLODE = true;
@@ -13,6 +14,8 @@ class Effects extends FlxGroup {
 
 	public function new() { 
 		super();
+		statusText = new ScoreText();
+		add(statusText);
 	}
 
 	public function explode(x:Float, y:Float, amount:Int = EMITTER_SIZE) {

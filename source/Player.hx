@@ -22,8 +22,13 @@ class Player extends FlxSprite {
         drag.x = maxVelocity.x*5;
         drag.y = maxVelocity.y*5;
 
-        width = 13;
-        offset.x = 3;
+        width  = 12;
+        height = 14;
+        offset.x = 2.5;
+        offset.y = 1.5;
+
+        direction = Dir.N;
+        facing = FlxObject.UP;
 
         var walkSpeed = 6;
 
@@ -38,44 +43,46 @@ class Player extends FlxSprite {
 	override public function hurt(damage:Float):Void {
 		if(FlxFlicker.isFlickering(this)) return;
 		FlxFlicker.flicker(this, 1.0);
-		var sound = openfl.Assets.getSound("assets/sounds/hurt.wav");
-		sound.play();
+		openfl.Assets.getSound("assets/sounds/hurt.wav").play();
 		super.hurt(damage);
 	}
 
 	override public function kill():Void {
-		FlxG.switchState(new MenuState());
+		FlxG.switchState(new GameOverState());
 	}
 
 
 	override public function update()
 	{
-		animation.pause();
+	    animation.pause();
 
 		if(FlxG.keyboard.justPressed("SPACE")) {
 			fireArrow();
 		}
 
-		if(FlxG.keyboard.pressed("LEFT", "A")) {
+		if(FlxG.keyboard.justPressed("SHIFT", "E")) {
+			swingSword();
+		} else if(FlxG.keyboard.pressed("LEFT", "A")) {
 			this.velocity.x -= speed;
 			direction = Dir.W;
 			facing = FlxObject.LEFT;
 			animation.play("walk-right");
-		} if(FlxG.keyboard.pressed("RIGHT", "D")) {
+		} else if(FlxG.keyboard.pressed("RIGHT", "D")) {
 			this.velocity.x += speed;
 			direction = Dir.E;
 			facing = FlxObject.RIGHT;
 			animation.play("walk-left");
-		} if(FlxG.keyboard.pressed("UP", "W")) {
+		} else if(FlxG.keyboard.pressed("UP", "W")) {
 			this.velocity.y -= speed;
 			direction = Dir.N;
 			facing = FlxObject.UP;
 			animation.play("walk-up");
-		} if(FlxG.keyboard.pressed("DOWN", "S")) {
+		} else if(FlxG.keyboard.pressed("DOWN", "S")) {
 			this.velocity.y += speed;
 			direction = Dir.S;
 			facing = FlxObject.DOWN;
 			animation.play("walk-down");
+		} else {
 		}
 
 		var dis = 4;
@@ -91,6 +98,17 @@ class Player extends FlxSprite {
 		}
 
 		super.update();
+	}
+
+	function swingSword():Void {
+		if(direction == Dir.N)
+			Reg.swingSword(x - width * 0.8, y - height * 1.65, -90);
+		if(direction == Dir.E)
+			Reg.swingSword(x + width, y - height * 1.4, 0);
+	 	if(direction == Dir.S)
+			Reg.swingSword(x + width * 0.8, y + 5, 90);
+		if(direction == Dir.W)
+			Reg.swingSword(x - width * 1.3, y, 180);
 	}
 
 	function fireArrow():Void
